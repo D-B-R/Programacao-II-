@@ -1,7 +1,9 @@
-module br {
-    requires javafx.controls;
-    requires javafx.fxml;
+module com {
+    requer javafx . controles;
+    requer javafx . fxml;
 
-    opens br to javafx.fxml;
-    exports br;
+    abre com para javafx . fxml;
+    exportações com;
+    requer javafx . graphicsEmpty;
+    requer java . base;
 }
