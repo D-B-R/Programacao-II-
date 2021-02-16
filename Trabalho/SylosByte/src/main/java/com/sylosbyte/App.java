@@ -1,5 +1,8 @@
 package com.sylosbyte;
-
+/**
+ * 
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

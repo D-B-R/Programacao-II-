@@ -59,12 +59,12 @@
             <Font size="18.0" />
           </font>
         </Label>
-            <Label layoutX="134.0" layoutY="74.0" text="Entrada" />
+            <Label layoutX="127.0" layoutY="74.0" prefHeight="18.0" prefWidth="53.0" text="Entrada" />
             <Label layoutX="134.0" layoutY="134.0" prefHeight="17.0" prefWidth="59.0" text="Saida " />
-            <TextField fx:id="campoEntrada" layoutX="202.0" layoutY="71.0" />
-            <TextField fx:id="campoSaida" editable="false" layoutX="194.0" layoutY="122.0" />
-            <Button layoutX="285.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="ok " />
-            <Button layoutX="180.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="limpar" />
+            <TextField fx:id="campoEntrada" layoutX="189.0" layoutY="70.0" prefHeight="26.0" prefWidth="161.0" />
+            <TextField fx:id="campoSaida" editable="false" layoutX="194.0" layoutY="122.0" prefHeight="26.0" prefWidth="152.0" />
+            <Button layoutX="279.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="ok " />
+            <Button layoutX="202.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="limpar" />
       </children>
     </AnchorPane>
   </children>
