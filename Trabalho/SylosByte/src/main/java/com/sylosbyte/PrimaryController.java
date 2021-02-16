@@ -1,4 +1,4 @@
-package com;
+package com.sylosbyte;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
