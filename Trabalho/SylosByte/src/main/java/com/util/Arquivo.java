@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class Arquivo {
 
-    public void inserir(Usuario usuario) {
+    public static void inserir(Usuario usuario) {
         try {
             ArrayList<Usuario> atual = listar();
             atual.add(usuario);
@@ -42,7 +42,7 @@ public class Arquivo {
             return lista;
         } catch (FileNotFoundException e) {
             System.out.println("Arquivo não encontrado");
-        } catch (EOFException e) {  // arquivo vazio
+        } catch (EOFException e) {  
             return lista;
         } catch (IOException | ClassNotFoundException e) {
 
