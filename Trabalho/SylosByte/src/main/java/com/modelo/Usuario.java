@@ -11,14 +11,14 @@ public class Usuario implements Serializable {
     String nome;
     String senha;
 
-    public Usuario() {
+    public Usuario() { //construtor vazio
 
         this.login = "";
         this.nome = "";
         this.senha = "";
     }
 
-    public Usuario(String login, String nome, String senha) {
+    public Usuario(String login, String nome, String senha) { // construtor que recebe os paramnetros que foram passados anteriormente no construtor vazio
 
         this.login = login;
         this.nome = nome;
