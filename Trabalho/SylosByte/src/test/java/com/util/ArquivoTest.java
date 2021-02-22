@@ -34,11 +34,11 @@ public class ArquivoTest {
 //        Arquivo.inserir (u);
 //    }
     
-    @org.junit.jupiter.api.Test
-    public void testeListar (){
-        ArrayList<Usuario> lista = Arquivo.listar();
-        for (Usuario u :lista){
-            System.out.println(u.getNome());
-        }
-    }
+//    @org.junit.jupiter.api.Test
+//    public void testeListar (){
+//        ArrayList<Usuario> lista = Arquivo.listar();
+//        for (Usuario u :lista){
+//            System.out.println(u.getNome());
+//        }
+//    }
 }

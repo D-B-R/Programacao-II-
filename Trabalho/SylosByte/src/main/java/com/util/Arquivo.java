@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 public class Arquivo {
 
+    
     public static void inserir(Usuario usuario) {
         try {
             ArrayList<Usuario> atual = listar();
