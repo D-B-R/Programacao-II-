@@ -63,8 +63,8 @@
             <Label layoutX="108.0" layoutY="134.0" prefHeight="18.0" prefWidth="70.0" text="    SAÍDA" />
             <TextField fx:id="campoEntrada" layoutX="189.0" layoutY="70.0" prefHeight="26.0" prefWidth="161.0" />
             <TextField fx:id="campoSaida" editable="false" layoutX="194.0" layoutY="122.0" prefHeight="26.0" prefWidth="152.0" />
-            <Button layoutX="279.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="ok " />
-            <Button layoutX="202.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="limpar" />
+            <Button layoutX="279.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="OK" />
+            <Button layoutX="202.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="LIMPAR" />
             <Label layoutX="144.0" layoutY="39.0" prefHeight="18.0" prefWidth="249.0" text="                         SYLOS BYTE" />
       </children>
     </AnchorPane>
