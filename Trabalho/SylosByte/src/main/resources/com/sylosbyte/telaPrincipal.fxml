@@ -66,6 +66,7 @@
             <Button layoutX="279.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="OK" />
             <Button layoutX="202.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="LIMPAR" />
             <Label layoutX="144.0" layoutY="39.0" prefHeight="18.0" prefWidth="249.0" text="                         SYLOS BYTE" />
+            <Button layoutX="205.0" layoutY="243.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="127.0" text="CADASTRAR" />
       </children>
     </AnchorPane>
   </children>
