@@ -1,12 +1,12 @@
 
-package com.sylosbyte;
+package com;
 
 /**
  * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
  */
 import com.modelo.Usuario;
-import com.modelo.util.Arquivo;
+import com.util.Arquivo;
 import java.io.IOException;
 import java.util.ArrayList;
 import javafx.fxml.FXML;

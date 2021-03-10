@@ -1,4 +1,4 @@
-package com.modelo.util;
+package com.util;
 
 /**
  *

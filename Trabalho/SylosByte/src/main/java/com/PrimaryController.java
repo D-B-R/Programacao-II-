@@ -1,11 +1,14 @@
-package com.sylosbyte;
+package com;
 /**
  * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
  */
 import java.io.IOException;
 import javafx.fxml.FXML;
-
+/**
+ * 
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 public class PrimaryController {
 
     @FXML

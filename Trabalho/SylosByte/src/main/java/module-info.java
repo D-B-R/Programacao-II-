@@ -3,5 +3,5 @@ module com.sylosbyte {
     requires javafx.fxml;
 
     opens com.sylosbyte to javafx.fxml;
-    exports com.sylosbyte;
+    exports com.modelo;
 }

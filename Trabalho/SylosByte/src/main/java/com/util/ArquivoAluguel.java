@@ -1,5 +1,5 @@
 
-package com.modelo.util;
+package com.util;
 /**
  * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
