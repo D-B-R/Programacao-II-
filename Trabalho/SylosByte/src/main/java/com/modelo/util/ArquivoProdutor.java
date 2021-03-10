@@ -1,11 +1,11 @@
-package com.sylosbyte;
+
+package com.modelo.util;
 
 /**
- *
+ * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
  */
-import com.modelo.Usuario;
-import com.sylosbyte.Info;
+import com.modelo.Produtor;
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,36 +15,34 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class Arquivo {
 
+public class ArquivoProdutor {
     
-    public static void inserir(Usuario usuario) {
+    public static void inserir(Produtor produtor) {
         try {
-            ArrayList<Usuario> atual = listar();
-            atual.add(usuario);
-            FileOutputStream fos = new FileOutputStream(Info.ARQUIVO_USUARIO);
-            try (ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-                oos.writeObject(atual);
-            }
-
+            ArrayList<Produtor> atual = listar();
+            atual.add(produtor); 
+            FileOutputStream fos = new FileOutputStream(Info.ARQUIVO_PRODUTOR);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(atual);
+            oos.close();
         } catch (IOException ex) {
-            System.out.println(" Erro ao inserir usuário ");
-        }
-
+            System.out.println("Erro ao inserir produtor");
+        } 
     }
-
-  public static ArrayList<Usuario> listar() {
-        ArrayList<Usuario> lista = new ArrayList();
+    
+    public static ArrayList<Produtor> listar() {
+        ArrayList<Produtor> lista = new ArrayList();
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream(Info.ARQUIVO_USUARIO);
+            fis = new FileInputStream(Info.ARQUIVO_PRODUTOR);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            lista = (ArrayList<Usuario>) ois.readObject();
+            lista = (ArrayList<Produtor>) ois.readObject();
             ois.close();
             return lista;
         } catch (FileNotFoundException e) {
             System.out.println("Arquivo não encontrado");
-        } catch (EOFException e) {  
+        } catch (EOFException e) {  // arquivo vazio
             return lista;
         } catch (IOException | ClassNotFoundException e) {
 
@@ -57,5 +55,7 @@ public class Arquivo {
         }
         return lista;
     }
-
+    
 }
+
+

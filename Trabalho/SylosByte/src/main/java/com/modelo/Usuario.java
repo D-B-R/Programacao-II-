@@ -5,48 +5,53 @@ package com.modelo;
  */
 import java.io.Serializable;
 
-public class Usuario implements Serializable {
 
-    String login;
-    String nome;
-    String senha;
+public class Usuario implements Serializable{
+    
+   String login;
+   String name;
+   String password;
+   
+   public Usuario(){
+       this.login = "";
+       this.name = "";
+       this.password = "";
+   }
 
-    public Usuario() { //construtor vazio
-
-        this.login = "";
-        this.nome = "";
-        this.senha = "";
-    }
-
-    public Usuario(String login, String nome, String senha) { // construtor que recebe os paramnetros que foram passados anteriormente no construtor vazio
-
+    public Usuario(String login, String name, String password) {
         this.login = login;
-        this.nome = nome;
-        this.senha = senha;
+        this.name = name;
+        this.password = password;
     }
 
     public String getLogin() {
         return login;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public void setLogin(String login) {
         this.login = login;
     }
 
-    public String getNome() {
-        return nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setPassword(String password) {
+        this.password = password;
     }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
+   
+   
+    
 }
+
+
+
+
