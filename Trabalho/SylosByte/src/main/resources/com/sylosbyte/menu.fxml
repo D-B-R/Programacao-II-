@@ -10,45 +10,62 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sylosbyte.TelaPrincipalController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.projetosilobytes.MenuController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Arquivo">
+        <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Usuário">
+        <Menu mnemonicParsing="false" text="USUÁRIO">
           <items>
+            <MenuItem mnemonicParsing="false" onAction="#cadastrarUsuario" text="Novo" />
             <MenuItem mnemonicParsing="false" text="Alterar" />
-            <MenuItem mnemonicParsing="false" text="Listar" />
-            <MenuItem mnemonicParsing="false" text="Novo" />
-            <MenuItem mnemonicParsing="false" text="Excluir" />
+            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="Listar" />
             <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Excluir" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Ajuda">
+        <Menu mnemonicParsing="false" text="AJUDA">
           <items>
-            <MenuItem mnemonicParsing="false" text="Em Construçao" />
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="157.0" layoutY="299.0" style="&#10;" text="Desenvolvido por Daniel Bernardo " textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="208.0" layoutY="42.0" prefHeight="21.0" prefWidth="210.0" style="&#10;" text="SYLOS BYTE" textAlignment="CENTER" wrapText="false">
           <font>
-            <Font size="18.0" />
+            <Font name="SansSerif Regular" size="18.0" />
           </font>
         </Label>
-            <Label layoutX="127.0" layoutY="74.0" prefHeight="18.0" prefWidth="53.0" text="LOGIN" />
-            <Label layoutX="108.0" layoutY="134.0" prefHeight="18.0" prefWidth="70.0" text="    SENHA " />
-            <TextField fx:id="campoEntrada" layoutX="189.0" layoutY="70.0" prefHeight="26.0" prefWidth="161.0" />
-            <TextField fx:id="campoSaida" editable="false" layoutX="194.0" layoutY="122.0" prefHeight="26.0" prefWidth="152.0" />
-            <Button layoutX="234.0" layoutY="173.0" mnemonicParsing="false" onAction="#processar" text="ENTRAR" />
-            <Label layoutX="144.0" layoutY="39.0" prefHeight="18.0" prefWidth="249.0" text="                         SYLOS BYTE" />
+            <TextField fx:id="inputLogin" layoutX="252.0" layoutY="104.0">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="inputPassword" layoutX="254.0" layoutY="155.0" prefHeight="23.0" prefWidth="150.0">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></TextField>
+            <Button layoutX="294.0" layoutY="229.0" mnemonicParsing="false" onAction="#entrar" text="LOGAR">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Button>
+            <Label layoutX="206.0" layoutY="101.0" text="LOGIN">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Label>
+            <Label layoutX="204.0" layoutY="160.0" prefHeight="17.0" prefWidth="42.0" text="SENHA">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Label>
+            <Text fx:id="erroText" fill="#ff2222" layoutX="251.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+            <Label layoutX="227.0" layoutY="311.0" prefHeight="17.0" prefWidth="210.0" text="Desenvolvido por Daniel Bernardo " />
       </children>
     </AnchorPane>
   </children>
