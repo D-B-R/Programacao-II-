@@ -17,37 +17,21 @@
       <menus>
         <Menu mnemonicParsing="false" text="Arquivo">
           <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Editar">
+        <Menu mnemonicParsing="false" text="Usuário">
           <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
+            <MenuItem mnemonicParsing="false" text="Alterar" />
+            <MenuItem mnemonicParsing="false" text="Listar" />
+            <MenuItem mnemonicParsing="false" text="Novo" />
+            <MenuItem mnemonicParsing="false" text="Excluir" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Ajuda">
           <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" text="Em Construçao" />
           </items>
         </Menu>
       </menus>
@@ -59,14 +43,12 @@
             <Font size="18.0" />
           </font>
         </Label>
-            <Label layoutX="110.0" layoutY="74.0" prefHeight="18.0" prefWidth="70.0" text="ENTRADA" />
-            <Label layoutX="108.0" layoutY="134.0" prefHeight="18.0" prefWidth="70.0" text="    SAÍDA" />
+            <Label layoutX="127.0" layoutY="74.0" prefHeight="18.0" prefWidth="53.0" text="LOGIN" />
+            <Label layoutX="108.0" layoutY="134.0" prefHeight="18.0" prefWidth="70.0" text="    SENHA " />
             <TextField fx:id="campoEntrada" layoutX="189.0" layoutY="70.0" prefHeight="26.0" prefWidth="161.0" />
             <TextField fx:id="campoSaida" editable="false" layoutX="194.0" layoutY="122.0" prefHeight="26.0" prefWidth="152.0" />
-            <Button layoutX="279.0" layoutY="177.0" mnemonicParsing="false" onAction="#processar" text="OK" />
-            <Button layoutX="202.0" layoutY="177.0" mnemonicParsing="false" onAction="#limpar" text="LIMPAR" />
+            <Button layoutX="234.0" layoutY="173.0" mnemonicParsing="false" onAction="#processar" text="ENTRAR" />
             <Label layoutX="144.0" layoutY="39.0" prefHeight="18.0" prefWidth="249.0" text="                         SYLOS BYTE" />
-            <Button layoutX="205.0" layoutY="243.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="127.0" text="CADASTRAR" />
       </children>
     </AnchorPane>
   </children>
