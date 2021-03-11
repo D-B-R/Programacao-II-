@@ -1,10 +1,11 @@
 
-package com;
+package com.sylosbyte;
 
 /**
  * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
  */
+import com.sylosbyte.App;
 import com.modelo.Usuario;
 import com.util.Arquivo;
 import java.io.IOException;

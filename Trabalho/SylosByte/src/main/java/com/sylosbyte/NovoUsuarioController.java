@@ -1,5 +1,5 @@
 
-package com;
+package com.sylosbyte;
 
 /**
  * 
@@ -7,6 +7,7 @@ package com;
  */
 
 
+import com.sylosbyte.App;
 import javafx.fxml.FXML;
 import com.modelo.Usuario;
 import com.util.Arquivo;

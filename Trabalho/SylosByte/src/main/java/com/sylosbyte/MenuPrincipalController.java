@@ -1,11 +1,12 @@
 
-package com;
+package com.sylosbyte;
 
 /**
  * 
  * @author DANIEL BERNARDO ROCHA (DBR79)
  */
 
+import com.sylosbyte.App;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
