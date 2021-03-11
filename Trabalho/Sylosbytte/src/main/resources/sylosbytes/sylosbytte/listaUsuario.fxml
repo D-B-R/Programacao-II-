@@ -47,53 +47,38 @@
   <children>
     <MenuBar prefHeight="4.0" prefWidth="662.0" VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Arquivo">
+        <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
             <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="Menu" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
+        <Menu mnemonicParsing="false" text="AJUDA">
           <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" text="PAGINAR PARA LISTAR USUARIOS QUE ESTAO CADASTRADOS NO SISTEMA" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="253.0" layoutY="14.0" style="&#10;" text="Lista de Usuários" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="103.0" layoutY="14.0" prefHeight="21.0" prefWidth="459.0" style="&#10;" text="LISTAR USUARIOS CADASTRADOS " textAlignment="CENTER" textFill="#ca5959" wrapText="false">
           <font>
             <Font name="SansSerif Regular" size="18.0" />
           </font>
         </Label>
-            <TextArea fx:id="inputList" layoutX="52.0" layoutY="52.0" prefHeight="226.0" prefWidth="558.0">
+            <TextArea fx:id="inputList" layoutX="52.0" layoutY="52.0" prefHeight="226.0" prefWidth="431.0">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></TextArea>
-            <Button layoutX="297.0" layoutY="323.0" mnemonicParsing="false" onAction="#listarUsuario" text="Listar">
+            <Button layoutX="532.0" layoutY="134.0" mnemonicParsing="false" onAction="#listarUsuario" text="LISTAR" textFill="#ab5656">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
+            <Label layoutX="210.0" layoutY="343.0" />
+            <Label layoutX="252.0" layoutY="306.0" text="SYLOS BYTTES 2020-2021" textFill="#974040" />
       </children>
     </AnchorPane>
   </children>
 </VBox>
-
-
-

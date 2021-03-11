@@ -48,49 +48,35 @@
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Arquivo">
+        <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="Menu Principal" />
+            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="RETORNA" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
+        <Menu mnemonicParsing="false" text="AJUDA">
           <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" text="PAGINA PARA REALIZAR CADASTRO DE PRODUTOR" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="176.0" layoutY="51.0" style="&#10;" text="CADASTRO DE NOVO PRODUTOR" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="176.0" layoutY="51.0" style="&#10;" text="CADASTRO DE NOVO PRODUTOR" textAlignment="CENTER" textFill="#d12e2e" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
             <TextField fx:id="inputCPF" layoutX="381.0" layoutY="196.0" prefHeight="26.0" prefWidth="174.0" />
             <DatePicker fx:id="inputDate" layoutX="225.0" layoutY="154.0" prefHeight="26.0" prefWidth="174.0" />
-            <Label layoutX="55.0" layoutY="115.0" text="NOME" />
-            <Label layoutX="332.0" layoutY="200.0" text="CPF" />
-            <Label layoutX="90.0" layoutY="158.0" text="DATA DE NASCIMENTO" />
+            <Label layoutX="55.0" layoutY="115.0" text="NOME" textFill="#9e2a2a" />
+            <Label layoutX="332.0" layoutY="200.0" text="CPF" textFill="#a72323" />
+            <Label layoutX="90.0" layoutY="158.0" text="DATA DE NASCIMENTO" textFill="#991f1f" />
             <TextField fx:id="inputName" layoutX="116.0" layoutY="111.0" prefHeight="26.0" prefWidth="174.0" />
-            <Button layoutX="468.0" layoutY="253.0" mnemonicParsing="false" onAction="#cadastrar" text="CADASTRAR" />
-            <Label layoutX="252.0" layoutY="303.0" text="SYLOS BYTTES 2020-2021" />
+            <Button layoutX="468.0" layoutY="258.0" mnemonicParsing="false" onAction="#cadastrar" text="CADASTRAR" textFill="#d82b2b" />
+            <Label layoutX="252.0" layoutY="303.0" text="SYLOS BYTTES 2020-2021" textFill="#b43b3b" />
       </children>
     </AnchorPane>
       <TextField prefHeight="26.0" prefWidth="174.0" />

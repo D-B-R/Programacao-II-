@@ -11,18 +11,20 @@ import java.time.LocalDate;
 
 public class Aluguel implements Serializable{
     
-    int id;
+    
     Produtor produtor;
     LocalDate dataInicial;
     Double qtd;
     String status;
+    int id;
 
-    public Aluguel(int id, Produtor produtor, LocalDate dataInicial, Double qtd, String status) {
-        this.id = id;
+    public Aluguel( Produtor produtor, LocalDate dataInicial, Double qtd, String status,int id) {
+        
         this.produtor = produtor;
         this.dataInicial = dataInicial;
         this.qtd = qtd;
         this.status = status;
+        this.id = id;
     }
 
     public Aluguel() {

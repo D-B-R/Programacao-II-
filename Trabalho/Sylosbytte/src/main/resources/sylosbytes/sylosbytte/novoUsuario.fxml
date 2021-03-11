@@ -49,14 +49,14 @@
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Arquivo">
+        <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
             <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="Menu" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Ajuda">
+        <Menu mnemonicParsing="false" text="AJUDA">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
@@ -65,23 +65,23 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="284.0" layoutY="25.0" style="&#10;" text="CADASTRO" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="217.0" layoutY="31.0" style="&#10;" text="CADASTRO DE NOVO USUARIO" textAlignment="CENTER" textFill="#b42828" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
-            <Label layoutX="68.0" layoutY="106.0" text="LOGIN" />
-            <Label layoutX="210.0" layoutY="151.0" text="NOME" />
-            <Label layoutX="286.0" layoutY="204.0" text="SENHA" />
+            <Label layoutX="68.0" layoutY="106.0" text="LOGIN" textFill="#993a3a" />
+            <Label layoutX="210.0" layoutY="151.0" text="NOME" textFill="#991919" />
+            <Label layoutX="286.0" layoutY="204.0" text="SENHA" textFill="#dc1f1f" />
             <TextField fx:id="campoLogin" layoutX="126.0" layoutY="102.0" />
             <TextField fx:id="campoName" layoutX="284.0" layoutY="147.0" />
-            <Button layoutX="448.0" layoutY="259.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="CADASTRAR">
+            <Button layoutX="448.0" layoutY="259.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="CADASTRAR" textFill="#bf2121">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
             <PasswordField fx:id="campoPassword" layoutX="382.0" layoutY="200.0" />
-            <Label layoutX="256.0" layoutY="313.0" text="SYLOS BYTTES 2020-2021" />
+            <Label layoutX="256.0" layoutY="313.0" text="SYLOS BYTTES 2020-2021" textFill="#901c1c" />
       </children>
     </AnchorPane>
   </children>

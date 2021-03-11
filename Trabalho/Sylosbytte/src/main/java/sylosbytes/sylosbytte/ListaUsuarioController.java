@@ -38,9 +38,6 @@ public class ListaUsuarioController {
         App.setRoot("menu");
     }
     
-    
-
-    
 }
 
 
