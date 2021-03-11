@@ -27,7 +27,7 @@ public class ArquivoProdutor {
             oos.writeObject(atual);
             oos.close();
         } catch (IOException ex) {
-            System.out.println("Erro ao inserir produtor");
+            System.out.println("Erro no cadastro de produtor");
         }
     }
     
@@ -41,8 +41,8 @@ public class ArquivoProdutor {
             ois.close();
             return lista;
         } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado");
-        } catch (EOFException e) {  // arquivo vazio
+            System.out.println("ARQUIVO NÃO LOCALIZADO");
+        } catch (EOFException e) {  
             return lista;
         } catch (IOException | ClassNotFoundException e) {
 
@@ -50,7 +50,7 @@ public class ArquivoProdutor {
             try {
                 fis.close();
             } catch (IOException ex) {
-                System.out.println("Erro ao ler arquivo");
+                System.out.println("NAO É POSSIVEL LER ARQUIVO");
             }
         }
         return lista;
@@ -60,3 +60,4 @@ public class ArquivoProdutor {
 
 
 
+/**/

@@ -38,7 +38,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -50,23 +49,13 @@
       <menus>
         <Menu mnemonicParsing="false" text="MENU">
           <items>
-            <MenuItem mnemonicParsing="false" text="Pagina Inicial" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" text="INICIO" />
+            <MenuItem mnemonicParsing="false" text="SAIR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">
           <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" text="CADASTRO DE ALUGUEL " />
           </items>
         </Menu>
       </menus>
@@ -78,12 +67,12 @@
             <Font name="SansSerif Regular" size="18.0" />
           </font>
         </Label>
-            <TextField fx:id="inputName" layoutX="285.0" layoutY="182.0">
+            <TextField fx:id="inputName" layoutX="245.0" layoutY="154.0">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </TextField>
-            <TextField fx:id="inputQtd" layoutX="376.0" layoutY="222.0">
+            <TextField fx:id="inputQtd" layoutX="333.0" layoutY="202.0">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
@@ -93,23 +82,26 @@
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Button>
-            <Label layoutX="142.0" layoutY="186.0" text="NOME DO PRUDUTOR" textFill="#df5454">
+            <Label layoutX="92.0" layoutY="158.0" text="NOME DO PRUDUTOR" textFill="#df5454">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="44.0" layoutY="135.0" text="DATA DA ENTRADA" textFill="#ab3333">
+            <Label layoutX="14.0" layoutY="114.0" text="DATA DA ENTRADA" textFill="#ab3333">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="258.0" layoutY="226.0" text="QUANTIDADE" textFill="#c82121">
+            <Label layoutX="221.0" layoutY="206.0" text="QUANTIDADE" textFill="#c82121">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>
             </Label>
-            <DatePicker fx:id="inputDate" layoutX="183.0" layoutY="130.0" prefHeight="26.0" prefWidth="150.0" />
-            <Label fx:id="txt" layoutX="282.0" layoutY="279.0" text="Mensagem de erro" textFill="#ff4400" />
+            <DatePicker fx:id="inputDate" layoutX="157.0" layoutY="109.0" prefHeight="26.0" prefWidth="150.0" />
+            <Label fx:id="txt" layoutX="282.0" layoutY="279.0" text="SITUACAO" textFill="#ff4400" />
+            <Label layoutX="269.0" layoutY="242.0" text="ORIGEM DO PRODUTO " textFill="#b62e2e" />
+            <TextField layoutX="425.0" layoutY="238.0" />
+            <TextField layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="179.0" text="Preço: R$40,00 O KG  POR DIA" />
       </children>
     </AnchorPane>
   </children>

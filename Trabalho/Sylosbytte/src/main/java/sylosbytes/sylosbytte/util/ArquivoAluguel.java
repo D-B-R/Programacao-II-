@@ -27,7 +27,7 @@ public class ArquivoAluguel {
             oos.writeObject(atual);
             oos.close();
         } catch (IOException ex) {
-            System.out.println("Erro ao inserir aluguel");
+            System.out.println("NAO FOI POSSIVEL INSERIR O ALUGUEL ");
         }
     }
     
@@ -41,8 +41,8 @@ public class ArquivoAluguel {
             ois.close();
             return lista;
         } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado");
-        } catch (EOFException e) {  // arquivo vazio
+            System.out.println("NAO FOI LOCALIZADO O ARQUIVO ");
+        } catch (EOFException e) {  
             return lista;
         } catch (IOException | ClassNotFoundException e) {
 
@@ -50,7 +50,7 @@ public class ArquivoAluguel {
             try {
                 fis.close();
             } catch (IOException ex) {
-                System.out.println("Erro ao ler arquivo");
+                System.out.println("NÃO FOI POSSIVEL LER ARQUIVO");
             }
         }
         return lista;
@@ -58,4 +58,4 @@ public class ArquivoAluguel {
 }
 
 
-
+/**/

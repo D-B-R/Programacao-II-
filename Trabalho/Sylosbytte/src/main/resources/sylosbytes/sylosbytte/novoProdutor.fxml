@@ -69,14 +69,16 @@
             <Font size="18.0" />
           </font>
         </Label>
-            <TextField fx:id="inputCPF" layoutX="381.0" layoutY="196.0" prefHeight="26.0" prefWidth="174.0" />
-            <DatePicker fx:id="inputDate" layoutX="225.0" layoutY="154.0" prefHeight="26.0" prefWidth="174.0" />
-            <Label layoutX="55.0" layoutY="115.0" text="NOME" textFill="#9e2a2a" />
-            <Label layoutX="332.0" layoutY="200.0" text="CPF" textFill="#a72323" />
-            <Label layoutX="90.0" layoutY="158.0" text="DATA DE NASCIMENTO" textFill="#991f1f" />
-            <TextField fx:id="inputName" layoutX="116.0" layoutY="111.0" prefHeight="26.0" prefWidth="174.0" />
-            <Button layoutX="468.0" layoutY="258.0" mnemonicParsing="false" onAction="#cadastrar" text="CADASTRAR" textFill="#d82b2b" />
+            <TextField fx:id="inputCPF" layoutX="301.0" layoutY="174.0" prefHeight="26.0" prefWidth="174.0" />
+            <DatePicker fx:id="inputDate" layoutX="225.0" layoutY="132.0" prefHeight="26.0" prefWidth="174.0" />
+            <Label layoutX="14.0" layoutY="93.0" text="NOME" textFill="#9e2a2a" />
+            <Label layoutX="265.0" layoutY="178.0" text="CPF" textFill="#a72323" />
+            <Label layoutX="89.0" layoutY="136.0" text="DATA DE NASCIMENTO" textFill="#991f1f" />
+            <TextField fx:id="inputName" layoutX="59.0" layoutY="89.0" prefHeight="26.0" prefWidth="174.0" />
+            <Button layoutX="515.0" layoutY="260.0" mnemonicParsing="false" onAction="#cadastrar" text="CADASTRAR" textFill="#d82b2b" />
             <Label layoutX="252.0" layoutY="303.0" text="SYLOS BYTTES 2020-2021" textFill="#b43b3b" />
+            <TextField layoutX="425.0" layoutY="217.0" />
+            <Label layoutX="275.0" layoutY="221.0" text="NOME DA PROPRIEDADE" textFill="#971d1d" />
       </children>
     </AnchorPane>
       <TextField prefHeight="26.0" prefWidth="174.0" />

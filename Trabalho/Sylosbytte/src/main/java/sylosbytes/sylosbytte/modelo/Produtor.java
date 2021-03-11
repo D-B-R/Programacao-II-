@@ -12,7 +12,9 @@ import java.time.LocalDate;
 public class Produtor implements Serializable{
     
     String name;
-     LocalDate dataNascimento;
+    
+    LocalDate dataNascimento;
+     
     String cpf;
    
 
@@ -20,8 +22,11 @@ public class Produtor implements Serializable{
     }
 
     public Produtor(String name, LocalDate dataNascimento ,String cpf ) {
+        
         this.name = name;
+        
         this.dataNascimento = dataNascimento;
+        
         this.cpf = cpf;
         
     }
@@ -31,22 +36,27 @@ public class Produtor implements Serializable{
     }
 
     public String getCpf() {
+        
         return cpf;
     }
 
     public LocalDate getDataNascimento() {
+        
         return dataNascimento;
     }
 
     public void setName(String name) {
+        
         this.name = name;
     }
 
     public void setCpf(String cpf) {
+        
         this.cpf = cpf;
     }
 
     public void setDataNascimento(LocalDate dataNascimento) {
+        
         this.dataNascimento = dataNascimento;
     }
     

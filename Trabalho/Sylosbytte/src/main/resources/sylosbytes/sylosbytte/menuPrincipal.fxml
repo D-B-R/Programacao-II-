@@ -37,7 +37,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -48,18 +47,7 @@
       <menus>
         <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="Quit" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">
@@ -76,19 +64,15 @@
             <Font name="SansSerif Regular" size="24.0" />
           </font>
         </Label>
-            <Button layoutX="137.0" layoutY="155.0" mnemonicParsing="false" onAction="#novoAluguel" prefHeight="26.0" prefWidth="147.0" text="Criar novo aluguel" textFill="#9b2f2f">
+            <Button layoutX="211.0" layoutY="161.0" mnemonicParsing="false" onAction="#novoAluguel" prefHeight="26.0" prefWidth="147.0" text="NOVO ALUGUEL" textFill="#9b2f2f">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
-            <Button layoutX="320.0" layoutY="202.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Mostrar armazenamento" textFill="#bb3636">
+            <Button layoutX="403.0" layoutY="239.0" mnemonicParsing="false" onAction="#pagamento" prefHeight="26.0" prefWidth="147.0" text="PAGAMENTO " textFill="#bd4646">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
-            <Button layoutX="459.0" layoutY="282.0" mnemonicParsing="false" onAction="#pagamento" prefHeight="26.0" prefWidth="147.0" text="Realizar pagamento" textFill="#bd4646">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></Button>
-            <Button layoutX="30.0" layoutY="81.0" mnemonicParsing="false" onAction="#novoProdutor" prefHeight="26.0" prefWidth="147.0" text="Cadastrar Produtor" textFill="#d12727">
+            <Button layoutX="30.0" layoutY="81.0" mnemonicParsing="false" onAction="#novoProdutor" prefHeight="26.0" prefWidth="147.0" text="NOVO PRODUTOR" textFill="#d12727">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font>

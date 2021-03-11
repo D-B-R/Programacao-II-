@@ -50,7 +50,7 @@ public class MenuController {
                     App.setRoot("menuPrincipal");
                 }
             }else{
-                erroText.setText("Email ou senha inválidos!");
+                erroText.setText("DADOS INVALIDOS ");
             }
         }
         
@@ -59,3 +59,4 @@ public class MenuController {
   
 
 
+/**/

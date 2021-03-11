@@ -27,7 +27,7 @@ public class Arquivo {
             oos.writeObject(atual);
             oos.close();
         } catch (IOException ex) {
-            System.out.println("Erro ao inserir usuário");
+            System.out.println("ERRO AO REGISTRAR USUARIO");
         }
     }
 
@@ -41,8 +41,8 @@ public class Arquivo {
             ois.close();
             return lista;
         } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado");
-        } catch (EOFException e) {  // arquivo vazio
+            System.out.println("ARQUIVO NAO LOCALIZADO");
+        } catch (EOFException e) {  
             return lista;
         } catch (IOException | ClassNotFoundException e) {
 
@@ -50,7 +50,7 @@ public class Arquivo {
             try {
                 fis.close();
             } catch (IOException ex) {
-                System.out.println("Erro ao ler arquivo");
+                System.out.println("NAO FOI POSSIVEL LER ARQUIVO");
             }
         }
         return lista;
@@ -58,5 +58,5 @@ public class Arquivo {
 
 }
 
-
+/**/
 

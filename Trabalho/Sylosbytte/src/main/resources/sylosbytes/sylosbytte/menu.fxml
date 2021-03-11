@@ -50,16 +50,16 @@
       <menus>
         <Menu mnemonicParsing="false" text="SAIR">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="USUARIO">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#cadastrarUsuario" text="Novo" />
-            <MenuItem mnemonicParsing="false" text="Alterar" />
-            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="Listar" />
+            <MenuItem mnemonicParsing="false" onAction="#cadastrarUsuario" text="NOVO CADASTRO" />
+            <MenuItem mnemonicParsing="false" text="MODIFICAR" />
+            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="LISTAR" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Excluir" />
+            <MenuItem mnemonicParsing="false" text="DELETAR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">

@@ -5,28 +5,30 @@ package sylosbytes.sylosbytte.modelo;
  */
 public class Silo {
     
-    int capacidade;
+    int armazenamento;
 
     public Silo() {
     }
 
-    public Silo(int capacidade) {
+    public Silo(int armazenamento) {
         
-        this.capacidade = capacidade;
+        this.armazenamento = armazenamento;
     }
 
     public int getCapacidade() {
         
-        return capacidade;
+        return armazenamento;
     }
 
-    public void setCapacidade(int capacidade) {
+    public void setCapacidade(int armazenamento) {
         
-        this.capacidade = capacidade;
+        this.armazenamento = armazenamento;
         
     }    
 }
 
 
 
+
+/**/
 
