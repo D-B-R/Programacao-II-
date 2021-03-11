@@ -1,6 +1,9 @@
 
 package sylosbytes.sylosbytte.modelo;
-
+/**
+ *
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 
 import java.io.Serializable;
 import java.time.LocalDate;

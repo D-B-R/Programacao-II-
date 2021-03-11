@@ -1,7 +1,10 @@
 
 package sylosbytes.sylosbytte.util;
 
-
+/**
+ *
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 
 import sylosbytes.sylosbytte.modelo.Aluguel;
 import java.io.EOFException;

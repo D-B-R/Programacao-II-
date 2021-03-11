@@ -1,6 +1,9 @@
 
 package sylosbytes.sylosbytte.modelo;
-
+/**
+ *
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 public class Silo {
     int capacidade;
 

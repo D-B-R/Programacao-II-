@@ -1,6 +1,9 @@
 
 package sylosbytes.sylosbytte;
-
+/**
+ *
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 
 import sylosbytes.sylosbytte.modelo.Aluguel;
 import sylosbytes.sylosbytte.modelo.Produtor;

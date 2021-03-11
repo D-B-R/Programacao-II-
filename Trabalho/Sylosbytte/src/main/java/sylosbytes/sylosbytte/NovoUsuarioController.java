@@ -1,6 +1,9 @@
 
 package sylosbytes.sylosbytte;
-
+/**
+ *
+ * @author DANIEL BERNARDO ROCHA (DBR79)
+ */
 
 import javafx.fxml.FXML;
 import sylosbytes.sylosbytte.modelo.Usuario;
