@@ -44,62 +44,39 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sylosbytes.sylosbytte.MenuController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="SAIR">
+        <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="USUARIO">
-          <items>
-            <MenuItem mnemonicParsing="false" onAction="#cadastrarUsuario" text="NOVO CADASTRO" />
-                  <MenuItem mnemonicParsing="false" onAction="#cadastrarPropriedade" text="NOVA PROPRIEDADE" />
-            <MenuItem mnemonicParsing="false" text="MODIFICAR" />
-            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="LISTAR" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="DELETAR" />
+            <MenuItem mnemonicParsing="false" text="VOLTAR" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">
           <items>
-            <MenuItem mnemonicParsing="false" text="SE NAO TEM SENHA IR NA ABA USUARIO PARA SE CADASTRAR , OU SE DESEJA ALTERAR ALGO " />
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="252.0" layoutY="79.0" style="&#10;" text="SYLOS BYTTES" textAlignment="CENTER" textFill="#971e1e" wrapText="false">
+        <Label alignment="CENTER" layoutX="197.0" layoutY="46.0" style="&#10;" text="CADASTRAR PROPRIEDADE" textAlignment="CENTER" textFill="#a21515" wrapText="false">
           <font>
-            <Font name="SansSerif Regular" size="18.0" />
+            <Font size="18.0" />
           </font>
         </Label>
-            <TextField fx:id="inputLogin" layoutX="246.0" layoutY="135.0">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></TextField>
-            <TextField fx:id="inputPassword" layoutX="246.0" layoutY="174.0">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></TextField>
-            <Button layoutX="290.0" layoutY="227.0" mnemonicParsing="false" onAction="#entrar" text="LOGAR" textFill="#a93821">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></Button>
-            <Label layoutX="204.0" layoutY="139.0" text="LOGIN" textFill="#d33131">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></Label>
-            <Label layoutX="204.0" layoutY="178.0" text="SENHA" textFill="#ab2525">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font></Label>
-            <Text fx:id="erroText" fill="#ff2222" layoutX="251.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
-            <Label layoutX="255.0" layoutY="281.0" text="SYLOS BYTTES 2020-2021" textFill="#cd3535" />
-            <Label layoutX="213.0" layoutY="333.0" text="DESENVOLVIDO POR DANIEL BERNARDO" textFill="#d84444" />
+            <TextField layoutX="148.0" layoutY="125.0" />
+            <Text fill="#c63e3e" layoutX="58.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUNICIPIO" />
+            <Text fill="#c43535" layoutX="58.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME DA PROPRIEDAE " wrappingWidth="148.66666666666652" />
+            <TextField layoutX="232.0" layoutY="179.0" />
+            <Text fill="#bb3838" layoutX="253.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESTADO" />
+            <TextField layoutX="332.0" layoutY="221.0" />
+            <Button layoutX="438.0" layoutY="276.0" mnemonicParsing="false" text="CADASTRAR" />
       </children>
     </AnchorPane>
   </children>

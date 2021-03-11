@@ -78,7 +78,7 @@
                </font></Button>
             <Label layoutX="210.0" layoutY="343.0" />
             <Label layoutX="252.0" layoutY="306.0" text="SYLOS BYTTES 2020-2021" textFill="#974040" />
-            <Button layoutX="532.0" layoutY="187.0" mnemonicParsing="false" text="LIMPAR" textFill="#bd2121" />
+            <Button layoutX="532.0" layoutY="187.0" mnemonicParsing="false" onAction="#retirar" text="LIMPAR" textFill="#bd2121" />
       </children>
     </AnchorPane>
   </children>

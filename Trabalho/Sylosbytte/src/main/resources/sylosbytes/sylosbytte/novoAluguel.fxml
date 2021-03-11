@@ -50,7 +50,7 @@
         <Menu mnemonicParsing="false" text="MENU">
           <items>
             <MenuItem mnemonicParsing="false" text="INICIO" />
-            <MenuItem mnemonicParsing="false" text="SAIR" />
+            <MenuItem mnemonicParsing="false" text="sair" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">

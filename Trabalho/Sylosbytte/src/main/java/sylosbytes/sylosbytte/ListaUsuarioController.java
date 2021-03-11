@@ -33,6 +33,8 @@ public class ListaUsuarioController {
         System.exit(0);
     }
     
+    
+    
     @FXML
     private void voltarMenu() throws IOException{
         App.setRoot("menu");

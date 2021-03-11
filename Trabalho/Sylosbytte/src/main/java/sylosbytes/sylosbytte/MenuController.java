@@ -30,6 +30,11 @@ public class MenuController {
         App.setRoot("novoUsuario");
     }
     
+     @FXML
+    private void cadastrarPropriedade() throws IOException{
+        App.setRoot("novaPropriedade");
+    }
+    
     @FXML
     private void goListUsuario() throws IOException{
         App.setRoot("listaUsuario");
@@ -39,6 +44,8 @@ public class MenuController {
     private void sair(){
         System.exit(0);
     }
+    
+   
     
     @FXML
     private void entrar() throws IOException{
