@@ -18,6 +18,10 @@ import java.util.ArrayList;
 
 public class Arquivo {
 
+    
+    
+    
+    
     public static void inserir(Usuario usuario) {
         try {
             ArrayList<Usuario> atual = listar();
@@ -30,6 +34,9 @@ public class Arquivo {
             System.out.println("ERRO AO REGISTRAR USUARIO");
         }
     }
+    
+    
+    
 
     public static ArrayList<Usuario> listar() {
         ArrayList<Usuario> lista = new ArrayList();
@@ -45,6 +52,9 @@ public class Arquivo {
         } catch (EOFException e) {  
             return lista;
         } catch (IOException | ClassNotFoundException e) {
+            
+            
+            
 
         } finally {
             try {

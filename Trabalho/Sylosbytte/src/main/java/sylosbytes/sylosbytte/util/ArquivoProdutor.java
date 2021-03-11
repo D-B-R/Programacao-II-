@@ -19,6 +19,8 @@ import java.util.ArrayList;
 public class ArquivoProdutor {
     
     public static void inserir(Produtor produtor) {
+        
+        
         try {
             ArrayList<Produtor> atual = listar();
             atual.add(produtor);

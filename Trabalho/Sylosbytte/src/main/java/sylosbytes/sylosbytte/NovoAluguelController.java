@@ -81,14 +81,14 @@ public class NovoAluguelController {
             a.setId(verificaID());
             a.setProdutor(lista.get(prod));
             a.setDataInicial(inputDate.getValue());
-            a.setStatus("Em aberto");
+            a.setStatus("PENDENTE");
             double qtd = Double.parseDouble(inputQtd.getText());
             a.setQtd(qtd);
             ArquivoAluguel.inserir(a);
-            txt.setText("Deu certo");
+            txt.setText("TUDO OK");
             App.setRoot("menuPrincipal");
         }else{
-            txt.setText("Deu erro");
+            txt.setText("ERRO");
         }
         
         
