@@ -27,7 +27,7 @@ public class ArquivoPropriedade {
             oos.writeObject(atual);
             oos.close();
         } catch (IOException ex) {
-            System.out.println("Erro ao cadastrar propriedae");
+            System.out.println("Erro ao cadastrar propriedade");
         }
     }
     

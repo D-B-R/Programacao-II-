@@ -23,11 +23,11 @@ public class ListaUsuarioController {
         ArrayList<Usuario> lista = Arquivo.listar();
     
         for(Usuario u : lista){
-            inputList.appendText("Login: "+u.getLogin()+"    ");
-            inputList.appendText("Nome: "+u.getName()+"\n\n");
+            inputList.appendText("NOME: "+u.getName()+"    ");
+            inputList.appendText("LOGIN: "+u.getLogin()+"\n\n");
         }
     }
-    
+   
     @FXML
     private void sair(){
         System.exit(0);

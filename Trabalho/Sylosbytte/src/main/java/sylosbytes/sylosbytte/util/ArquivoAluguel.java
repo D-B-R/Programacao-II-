@@ -55,6 +55,24 @@ public class ArquivoAluguel {
         }
         return lista;
     }
+     public static void alterar(Aluguel a, int id, String status, Double valor){
+        ArrayList<Aluguel> lista = ArquivoAluguel.listar();
+        for(Aluguel aluguel: lista){
+            if(aluguel.getId() == id){
+                aluguel.setValor(valor);
+                aluguel.setStatus(status);
+                 try {
+                        FileOutputStream fos = new FileOutputStream(info.ARQUIVO_ALUGUEL);
+                        ObjectOutputStream oos = new ObjectOutputStream(fos);
+                        oos.writeObject(lista);
+                        oos.close();
+                    } catch (IOException ex) {
+                        System.out.println("FALHA AO MODIFICAR ALUGUEL");
+                    }
+            }
+        }
+    }
+
 }
 
 

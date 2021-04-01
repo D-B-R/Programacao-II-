@@ -41,10 +41,7 @@ public class NovoUsuarioController {
         this.campoPassword.setText("");
     }
     
-    @FXML
-    private void sair(){
-        System.exit(0);
-    }
+   
     
     @FXML
     private void voltarMenu() throws IOException{

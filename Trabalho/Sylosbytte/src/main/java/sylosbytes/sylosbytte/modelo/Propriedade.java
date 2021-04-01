@@ -5,10 +5,15 @@ package sylosbytes.sylosbytte.modelo;
  */
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 
 
 public class Propriedade implements Serializable{
+
+    public static ArrayList<Propriedade> listar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     String municipio;
     
@@ -39,7 +44,7 @@ public class Propriedade implements Serializable{
         return estado;
     }
 
-    public String getNomePropriedadeo() {
+    public String getNomePropriedade() {
         
         return nomePropriedade;
     }

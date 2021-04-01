@@ -32,20 +32,18 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sylosbytes.sylosbytte.NovoUsuarioController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sylosbytes.sylosbytte.ArmazenamentoController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -64,23 +62,16 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="217.0" layoutY="31.0" style="&#10;" text="CADASTRO DE NOVO USUARIO" textAlignment="CENTER" textFill="#b42828" wrapText="false">
+        <Label alignment="CENTER" layoutX="205.0" layoutY="33.0" style="&#10;" text="STATUS DE ARMAZENAMENTO " textAlignment="CENTER" textFill="#df3636" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
-            <Label layoutX="45.0" layoutY="106.0" prefHeight="17.0" prefWidth="73.0" text="ID DE LOGIN" textFill="#993a3a" />
-            <Label layoutX="210.0" layoutY="151.0" prefHeight="17.0" prefWidth="49.0" text="NOME" textFill="#991919" />
-            <Label layoutX="286.0" layoutY="204.0" text="CHAVE" textFill="#dc1f1f" />
-            <TextField fx:id="campoLogin" layoutX="126.0" layoutY="102.0" />
-            <TextField fx:id="campoName" layoutX="284.0" layoutY="147.0" />
-            <Button layoutX="448.0" layoutY="259.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="CADASTRAR" textFill="#bf2121">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <PasswordField fx:id="campoPassword" layoutX="382.0" layoutY="200.0" />
-            <Label layoutX="256.0" layoutY="313.0" text="SYLOS BYTTES 2020-2021" textFill="#901c1c" />
+            <TextArea fx:id="inputElements" layoutX="234.0" layoutY="101.0" prefHeight="125.0" prefWidth="285.0" />
+            <Button layoutX="30.0" layoutY="100.0" mnemonicParsing="false" onAction="#inputAberto" prefHeight="26.0" prefWidth="139.0" text="PROCESSANDO" />
+            <Button layoutX="30.0" layoutY="149.0" mnemonicParsing="false" onAction="#inputCredito" prefHeight="26.0" prefWidth="139.0" text="ABERTO" />
+            <Button layoutX="24.0" layoutY="199.0" mnemonicParsing="false" onAction="#inputPago" prefHeight="26.0" prefWidth="151.0" style="-fx-border-radius: 0px;" text="QUITADO" />
+            <Label layoutX="292.0" layoutY="296.0" text="SYLOS BYTTES 2020-2021" textFill="#f02b2b" />
       </children>
     </AnchorPane>
   </children>

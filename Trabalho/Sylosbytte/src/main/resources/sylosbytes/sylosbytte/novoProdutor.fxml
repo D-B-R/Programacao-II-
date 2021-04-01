@@ -52,7 +52,6 @@
           <items>
             <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="RETORNA" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="SAIR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">

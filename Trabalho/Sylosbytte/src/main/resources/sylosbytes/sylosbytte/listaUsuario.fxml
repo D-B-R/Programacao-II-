@@ -49,9 +49,8 @@
       <menus>
         <Menu mnemonicParsing="false" text="ARQUIVO">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="RETORNA" />
+            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="RETORNAR" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">
@@ -72,13 +71,12 @@
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></TextArea>
-            <Button layoutX="532.0" layoutY="134.0" mnemonicParsing="false" onAction="#listarUsuario" text="LISTAR" textFill="#ab5656">
+            <Button layoutX="527.0" layoutY="153.0" mnemonicParsing="false" onAction="#listarUsuario" text="LISTAR" textFill="#ab5656">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
             <Label layoutX="210.0" layoutY="343.0" />
             <Label layoutX="252.0" layoutY="306.0" text="SYLOS BYTTES 2020-2021" textFill="#974040" />
-            <Button layoutX="532.0" layoutY="187.0" mnemonicParsing="false"  text="LIMPAR" textFill="#bd2121" />
       </children>
     </AnchorPane>
   </children>

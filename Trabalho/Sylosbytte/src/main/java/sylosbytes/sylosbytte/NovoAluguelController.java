@@ -31,11 +31,12 @@ public class NovoAluguelController {
     @FXML
     private Label txt;
     
+    @FXML
+    private Label cap;    
+   
     
     
-    //cadsastrar no arquivo
-    //mas antes configurar arquivo
-    
+   
     @FXML
     private void sair(){
         System.exit(0);
@@ -66,11 +67,28 @@ public class NovoAluguelController {
     }
     
     @FXML
+    private double verificaArmazenamento(){
+        ArrayList<Aluguel> lista = ArquivoAluguel.listar();
+        double capacidade = 0;
+        
+        for(Aluguel a : lista){
+            if(a.getStatus().equals("Em aberto")){
+                capacidade += a.getQtd();
+            }
+        }
+        
+        return capacidade;
+    }
+    
+    
+    @FXML
     private void cadastrarAluguel() throws IOException{
         ArrayList<Produtor> lista = ArquivoProdutor.listar();
         
         Aluguel a = new Aluguel();
         int prod = -1;
+        
+        
         
         for(Produtor p : lista){
             if(p.getName().equals(inputName.getText())){
@@ -88,7 +106,7 @@ public class NovoAluguelController {
             txt.setText("TUDO OK");
             App.setRoot("menuPrincipal");
         }else{
-            txt.setText("ERRO");
+            txt.setText("ERRO CAPACIDAE NO MAXIMO");
         }
         
         

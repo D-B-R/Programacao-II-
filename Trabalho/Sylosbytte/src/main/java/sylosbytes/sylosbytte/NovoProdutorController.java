@@ -34,10 +34,7 @@ public class NovoProdutorController {
         App.setRoot("menuPrincipal");
     }
     
-    @FXML
-    private void sair(){
-        System.exit(0);
-    }
+  
     
     @FXML
     private void voltarMenu() throws IOException{

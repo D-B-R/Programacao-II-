@@ -34,14 +34,11 @@ public class NovaPropriedadeController {
         App.setRoot("menuPrincipal");
     }
     
-    @FXML
-    private void sair(){
-        System.exit(0);
-    }
+   
     
     @FXML
     private void voltarMenu() throws IOException{
-        App.setRoot("menuPrincipal");
+        App.setRoot("menu");
     }
     
 }

@@ -39,6 +39,8 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -57,10 +59,9 @@
           <items>
             <MenuItem mnemonicParsing="false" onAction="#cadastrarUsuario" text="NOVO CADASTRO" />
                   <MenuItem mnemonicParsing="false" onAction="#cadastrarPropriedade" text="NOVA PROPRIEDADE" />
-            <MenuItem mnemonicParsing="false" text="MODIFICAR" />
-            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="LISTAR" />
+            <MenuItem mnemonicParsing="false" onAction="#goListUsuario" text="LISTAR USUARIO" />
+                  <MenuItem mnemonicParsing="false" onAction="#goListPropriedade" text="LISTAR PROPRIEDADE" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="DELETAR" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="AJUDA">
@@ -70,7 +71,7 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="299.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
       <children>
         <Label alignment="CENTER" layoutX="252.0" layoutY="79.0" style="&#10;" text="SYLOS BYTTES" textAlignment="CENTER" textFill="#971e1e" wrapText="false">
           <font>
@@ -100,6 +101,16 @@
             <Text fx:id="erroText" fill="#ff2222" layoutX="251.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
             <Label layoutX="255.0" layoutY="281.0" text="SYLOS BYTTES 2020-2021" textFill="#cd3535" />
             <Label layoutX="213.0" layoutY="333.0" text="DESENVOLVIDO POR DANIEL BERNARDO" textFill="#d84444" />
+            <ImageView fitHeight="129.0" fitWidth="106.0" layoutX="14.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../../../../../../../../Users/User/Desktop/transferir.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="106.0" layoutX="517.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../../../../../../../../Users/User/Desktop/transferir.png" />
+               </image>
+            </ImageView>
       </children>
     </AnchorPane>
   </children>

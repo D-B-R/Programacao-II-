@@ -25,6 +25,12 @@ public class MenuController {
     @FXML
     private Text erroText;
     
+     
+    @FXML
+    private void goListUsuario() throws IOException{
+        App.setRoot("listaUsuario");
+    }
+    
     @FXML
     private void cadastrarUsuario() throws IOException{
         App.setRoot("novoUsuario");
@@ -34,11 +40,13 @@ public class MenuController {
     private void cadastrarPropriedade() throws IOException{
         App.setRoot("novaPropriedade");
     }
+   
     
     @FXML
-    private void goListUsuario() throws IOException{
-        App.setRoot("listaUsuario");
+    private void goListPropriedade() throws IOException{
+        App.setRoot("listarPropriedades");
     }
+    
     
     @FXML
     private void sair(){
