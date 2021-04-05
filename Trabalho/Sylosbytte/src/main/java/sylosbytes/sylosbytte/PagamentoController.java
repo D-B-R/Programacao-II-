@@ -77,7 +77,7 @@ public class PagamentoController {
         Aluguel a = lista.get(index);
         long dias = DAYS.between(a.getDataInicial(), dateExit.getValue());
         
-        double price = dias * 200 * a.getQtd();
+        double price = dias * 2 * a.getQtd();
         
         String days = Long.toString(dias);
         String priceTotal = Double.toString(price);

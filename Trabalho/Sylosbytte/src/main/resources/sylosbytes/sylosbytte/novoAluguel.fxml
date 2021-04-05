@@ -100,7 +100,7 @@
             <Label fx:id="txt" layoutX="282.0" layoutY="279.0" text="SITUACAO" textFill="#ff4400" />
             <Label layoutX="269.0" layoutY="242.0" text="ORIGEM DO PRODUTO " textFill="#b62e2e" />
             <TextField layoutX="425.0" layoutY="238.0" />
-            <TextField layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="179.0" text="200,00 TONELADA DIA" />
+            <TextField layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="179.0" text="2.000,00 TONELADA DIA" />
       </children>
     </AnchorPane>
   </children>

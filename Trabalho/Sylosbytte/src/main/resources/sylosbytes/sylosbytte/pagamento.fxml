@@ -80,18 +80,18 @@
             <Label layoutX="321.0" layoutY="257.0" prefHeight="18.0" prefWidth="118.0" text="TOTAL" textFill="#9b3030" />
             <Label fx:id="outPrice" layoutX="370.0" layoutY="257.0" prefHeight="18.0" prefWidth="74.0" text="0" textFill="#971b1b" />
             <Label fx:id="outDays" layoutX="494.0" layoutY="257.0" prefHeight="18.0" prefWidth="38.0" text="0" textFill="#c12727" />
-            <TextArea fx:id="inputElements" layoutX="22.0" layoutY="77.0" prefHeight="244.0" prefWidth="260.0">
+            <TextArea fx:id="inputElements" layoutX="22.0" layoutY="98.0" prefHeight="223.0" prefWidth="260.0">
                <font>
                   <Font size="11.0" />
                </font></TextArea>
-            <Label layoutX="170.0" layoutY="26.0" text="R$200,00 TONELADA DIA " textFill="#a22323" />
+            <Label layoutX="170.0" layoutY="26.0" text="R$2.000,00 TONELADA DIA " textFill="#a22323" />
             <RadioButton fx:id="credito" layoutX="494.0" layoutY="214.0" mnemonicParsing="false" text="CREDITO" textFill="#781515">
                <toggleGroup>
                   <ToggleGroup fx:id="grupo" />
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="pago" layoutX="318.0" layoutY="214.0" mnemonicParsing="false" selected="true" text="PAGAR " textFill="#750c0c" toggleGroup="$grupo" />
-            <Button layoutX="126.0" layoutY="321.0" mnemonicParsing="false" onAction="#listar" text="LISTAR" textFill="#871e1e" />
+            <Button layoutX="22.0" layoutY="73.0" mnemonicParsing="false" onAction="#listar" text="LISTAR" textFill="#871e1e" />
             <Label fx:id="result" layoutX="228.0" layoutY="338.0" />
       </children>
     </AnchorPane>

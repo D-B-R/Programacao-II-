@@ -106,7 +106,7 @@ public class NovoAluguelController {
             txt.setText("TUDO OK");
             App.setRoot("menuPrincipal");
         }else{
-            txt.setText("ERRO CAPACIDAE NO MAXIMO");
+            txt.setText("ERRO CAPACIDADE NO MAXIMO");
         }
         
         
